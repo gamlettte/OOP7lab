@@ -8,6 +8,7 @@ public:
 	MyArray(int size);
 	MyArray(const MyArray& other);
 	~MyArray();
+	MyArray& operator= (const MyArray& a);
 	double Arithmetic_mean();
 	double min();
 	double max();

@@ -14,6 +14,16 @@ MyArray::MyArray(const MyArray& other)
 		arr[i] = other.arr[i];
 	}
 }
+MyArray& MyArray::operator= (const MyArray& a)
+{
+	if (this == &a) return *this;
+	ChangeSize(a.size);
+	for (int i = 0; i < size; i++)
+	{
+		this->arr[i] = a.arr[i];
+	}
+	return *this;
+}
 MyArray::~MyArray()
 {
 	delete[] arr;
@@ -159,7 +169,6 @@ MyArray MyArray::operator* (double b)
 	}
 	return temp;
 }
-
 void MyArray::operator>> (System::Windows::Forms::DataGridView^ dg)
 {
 	this->ChangeSize(dg->RowCount - 1);

@@ -278,7 +278,7 @@ namespace lab7 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
 			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
-			this->ClientSize = System::Drawing::Size(774, 518);
+			this->ClientSize = System::Drawing::Size(807, 559);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
@@ -328,6 +328,7 @@ private: System::Void MultB_Click(System::Object^ sender, System::EventArgs^ e) 
 	a >> dGwA;
 	b >> dGwB;
 	a * b << dGwC;
+	a 
 }
 private: System::Void tbScalar_Click(System::Object^ sender, System::EventArgs^ e) {
 	MyArray a(dGwB->RowCount - 1);
